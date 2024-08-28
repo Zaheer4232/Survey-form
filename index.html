@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+ <link rel="stylesheet" href="styles.css">
+ <title>My Survey Form</title>
+</head>
+<body>
+  <div id="header">
+    <h1>Random Survey Form</h1>
+    <p><em>Thank you for taking the time to help fill this survey</em></p>
+  </div>
+  <div id="container">
+    <div class="form-wrap">
+      <form id="survey-form" method="post" action='#'>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="number">Age</label>
+          <input id="number" type="number" placeholder="Age" min="13" max="200" required />
+        </div>
+        <div class="form-group">
+          <label for="dropdown">Which option best describes you?</label>
+          <select id="dropdown" name="dropdown">
+            <option>(select one)</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="definitely-option">Would you recommend this Survey to a friend?</label>
+          <input id="radio-option" type="radio" value="1" name="recommendation" checked /> Definitely
+        </div>
+        <div class="form-group">
+          <input id="radio-option" type="radio" value="2" name="recommendation" /> Maybe
+        </div>
+        <div class="form-group">
+          <input id="radio-option" type="radio" value="3" name="recommendation" /> Not Sure
+        </div>
+        <div class="form-group">
+          <label for="dropdown">What's your Highest level of Education?</label>
+            <select name="dropdown" id="dropdown">
+              <option value="">Select an option</option>
+              <option value="1">High-School</option>
+              <option value="2">College</option>
+              <option value="3">Undergraduate</option>
+              <option value="4">Post-graduate</option>
+              <option value="5">Masters</option>
+              <option value="6">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label >What are your Hobbies?</label>
+          <label><input type="checkbox" value="1" /> Reading</label> 
+          <label><input type="checkbox" value="2" /> Swimming</label>
+          <label><input type="checkbox" value="3" /> Cooking</label>
+          <label> <input type="checkbox" value="4" /> Dancing</label>
+          <label><input type="checkbox" value="5" /> Singing</label>
+          <label><input type="checkbox" value="6" /> Other</label>
+        </div>
+        <div class="form-group">
+          <label for="comment-or-suggestion">Any comments or suggestions?</label>
+          <textarea name="comments" id="comment-or-suggestion"></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
